@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=2]
+
+[sub_resource type="SphereMesh" id=1]
+
+[sub_resource type="Skin" id=2]
+
+[node name="ARVRController" type="ARVRController"]
+
+[node name="RayCast" type="RayCast" parent="."]
+
+[node name="MeshInstance" type="MeshInstance" parent="."]
+mesh = SubResource( 1 )
+skin = SubResource( 2 )
+material/0 = null
