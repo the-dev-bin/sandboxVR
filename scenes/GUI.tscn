@@ -5,15 +5,29 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 margin_left = -4.23779
 margin_top = 2.11896
-margin_right = -4.23779
-margin_bottom = 2.11896
+margin_right = 280.0
+margin_bottom = 180.0
+mouse_filter = 1
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="ColorRect" type="ColorRect" parent="."]
-margin_right = 845.0
-margin_bottom = 536.0
+[node name="Panel" type="Panel" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -2.1189
+margin_top = 4.23792
+margin_right = 1022.88
+margin_bottom = 604.238
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="Panel"]
+margin_left = 27.3567
+margin_top = 5.88116
+margin_right = 2313.36
+margin_bottom = 1331.88
 color = Color( 1, 0, 0, 1 )
 __meta__ = {
 "_edit_use_anchors_": false

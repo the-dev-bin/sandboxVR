@@ -1,9 +1,10 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://scenes/left_controller.gd" type="Script" id=1]
 [ext_resource path="res://assets/Hand_Left.scn" type="PackedScene" id=2]
 [ext_resource path="res://scenes/GUI.gd" type="Script" id=3]
 [ext_resource path="res://scenes/GUI.tscn" type="PackedScene" id=4]
+[ext_resource path="res://scenes/GUIPanel3D.tscn" type="PackedScene" id=5]
 
 [sub_resource type="SphereShape" id=1]
 
@@ -32,10 +33,11 @@ shape = SubResource( 1 )
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.37091e-06, 0.00297239, -0.000537634 )
 shape = SubResource( 1 )
 
-[node name="grab_pos" type="Spatial" parent="."]
+[node name="grab_pos" type="Position3D" parent="."]
 
 [node name="GUI" type="MeshInstance" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.16938, -0.0214662, -1.21961 )
+visible = false
 mesh = SubResource( 2 )
 material/0 = null
 script = ExtResource( 3 )
@@ -44,3 +46,6 @@ script = ExtResource( 3 )
 size = Vector2( 800, 800 )
 
 [node name="GUI" parent="GUI/Viewport" instance=ExtResource( 4 )]
+
+[node name="GUIPanel3D" parent="." instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 0.0191276, 0.999817, 0, -0.999817, 0.0191276, -0.459996, 0.218944, -0.906535 )
