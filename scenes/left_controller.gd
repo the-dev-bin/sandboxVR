@@ -38,9 +38,11 @@ func _ready():
 func _physics_process(delta):
 
 	if teleport_button_down:
-		teleport_raycast.force_raycast_update()
+		print("TELEPORTATION ACTIVATE")
 		if teleport_raycast.is_colliding():
+			print("raycast colliding")
 			if teleport_raycast.get_collider() is StaticBody:
+				print("Static body intersecting")
 				if teleport_raycast.get_collision_normal().y >= 0.85:
 					teleport_pos = teleport_raycast.get_collision_point()
 					teleport_mesh.global_transform.origin = teleport_pos
@@ -111,7 +113,7 @@ func _physics_process(delta):
 
 
 func button_pressed(button_index):
-
+	print(button_index)
 	# If the trigger is pressed...
 	if button_index == 15:
 		if held_object:
