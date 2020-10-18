@@ -38,7 +38,6 @@ func _ready():
 func _physics_process(delta):
 
 	if teleport_button_down:
-		print("TELEPORTATION ACTIVATE")
 		if teleport_raycast.is_colliding():
 			print("raycast colliding")
 			if teleport_raycast.get_collider() is StaticBody:

@@ -1,0 +1,56 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://assets/Sting-Sword-lowpoly.obj" type="ArrayMesh" id=1]
+[ext_resource path="res://scenes/sword.gd" type="Script" id=2]
+
+[sub_resource type="SpatialMaterial" id=1]
+albedo_color = Color( 0.117647, 0.992157, 0.498039, 1 )
+
+[sub_resource type="SpatialMaterial" id=2]
+albedo_color = Color( 0.309804, 0.87451, 0.372549, 1 )
+
+[sub_resource type="SpatialMaterial" id=3]
+albedo_color = Color( 1, 0.556863, 0.290196, 1 )
+emission_enabled = true
+emission = Color( 0, 0, 0, 1 )
+emission_energy = 1.0
+emission_operator = 0
+emission_on_uv2 = false
+
+[sub_resource type="SpatialMaterial" id=4]
+albedo_color = Color( 0.537255, 0.537255, 0.537255, 1 )
+
+[sub_resource type="CapsuleShape" id=5]
+
+[sub_resource type="BoxShape" id=6]
+
+[sub_resource type="BoxShape" id=7]
+
+[node name="Sword" type="RigidBody"]
+transform = Transform( -0.199946, 0.00465963, 0, -0.00465963, -0.199946, 0, 0, 0, 0.2, 0, 0.588369, 0 )
+script = ExtResource( 2 )
+
+[node name="MeshInstance" type="MeshInstance" parent="."]
+transform = Transform( 0.1, 0, 0, 0, 1.19249e-09, 0.1, 0, -0.1, 1.19249e-09, 0, 0, 0 )
+mesh = ExtResource( 1 )
+material/0 = SubResource( 1 )
+material/1 = SubResource( 2 )
+material/2 = SubResource( 3 )
+material/3 = SubResource( 4 )
+
+[node name="CollisionShape" type="CollisionShape" parent="."]
+transform = Transform( 0.652, 0, 0, 0, -0.00222709, -1.86381, 0, -0.155984, 0.0266109, 0, 0.210818, 0 )
+shape = SubResource( 5 )
+
+[node name="Area" type="Area" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.370649, 0.350804, 0.045223 )
+
+[node name="CollisionShape" type="CollisionShape" parent="Area"]
+transform = Transform( 0.261, 0, 0, 0, 1.607, 0, 0, 0, 0.122, 0.362326, -0.922562, 0 )
+shape = SubResource( 6 )
+
+[node name="Area2" type="Area" parent="."]
+
+[node name="CollisionShape" type="CollisionShape" parent="Area2"]
+transform = Transform( 0.17, 0, 0, 0, 0.386, 0, 0, 0, 0.068, 0, -2.57081, 0 )
+shape = SubResource( 7 )
