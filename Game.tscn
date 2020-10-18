@@ -28,18 +28,18 @@ albedo_color = Color( 0.992157, 0, 1, 1 )
 [node name="Game" type="Spatial"]
 
 [node name="ARVROrigin" type="ARVROrigin" parent="."]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.01477, 0 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.60936, 0 )
 script = ExtResource( 1 )
 
 [node name="player_camera" type="ARVRCamera" parent="ARVROrigin"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.18911, -1.14194, 0.296839 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.18911, -0.166739, 0.296839 )
 current = true
 
 [node name="left_controller" parent="ARVROrigin" instance=ExtResource( 4 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -2.68775, -0.501691 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.16675, -0.501691 )
 
 [node name="right_controller" parent="ARVROrigin" instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -3.08955, 0 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.11946, 0 )
 controller_id = 2
 
 [node name="World" type="Spatial" parent="."]
