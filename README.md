@@ -15,11 +15,11 @@ The primary issue is dealing with dynamic loading in the world. We wanted to hav
 
 The painter modules use the immerdiategemotry of godot to build an array of v3 points and then draw them as a single line. 
 
-# Goals
+## Goals
 
 The painter could use new textures instead of the base texture, as well as the ability to select color and thickness.
 
-# Known Issues
+## Known Issues
 
 No way to undo what you have drawn, cant stop once you start drawing.
 
@@ -27,7 +27,7 @@ No way to undo what you have drawn, cant stop once you start drawing.
 
 The sword scene is based on a free sword skin and has collision features added to it. 
 
-# Goals
+## Goals
 
 The sword needs to have a better grab point
 
