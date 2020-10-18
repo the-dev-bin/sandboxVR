@@ -1,0 +1,39 @@
+[gd_scene load_steps=4 format=2]
+
+[sub_resource type="CubeMesh" id=1]
+
+[sub_resource type="CubeMesh" id=2]
+
+[sub_resource type="BoxShape" id=3]
+extents = Vector3( 1.014, 0.354, 0.684 )
+
+[node name="Table" type="StaticBody"]
+
+[node name="MeshInstance" type="MeshInstance" parent="."]
+transform = Transform( 1.012, 0, 0, 0, 0.15, 0, 0, 0, 0.681, 0, 0, 0 )
+mesh = SubResource( 1 )
+material/0 = null
+
+[node name="MeshInstance" type="MeshInstance" parent="MeshInstance"]
+transform = Transform( 0.162, 0, 0, 0, 3.333, 0, 0, 0, 0.242, -0.825284, -3.40672, 0.726757 )
+mesh = SubResource( 2 )
+material/0 = null
+
+[node name="MeshInstance2" type="MeshInstance" parent="MeshInstance"]
+transform = Transform( 0.162, 0, 0, 0, 3.333, 0, 0, 0, 0.242, -0.825284, -3.40672, -0.742933 )
+mesh = SubResource( 2 )
+material/0 = null
+
+[node name="MeshInstance3" type="MeshInstance" parent="MeshInstance"]
+transform = Transform( 0.162, 0, 0, 0, 3.333, 0, 0, 0, 0.242, 0.819216, -3.40672, -0.742933 )
+mesh = SubResource( 2 )
+material/0 = null
+
+[node name="MeshInstance4" type="MeshInstance" parent="MeshInstance"]
+transform = Transform( 0.162, 0, 0, 0, 3.333, 0, 0, 0, 0.242, 0.819216, -3.40672, 0.758801 )
+mesh = SubResource( 2 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.2, 0 )
+shape = SubResource( 3 )

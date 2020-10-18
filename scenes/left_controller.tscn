@@ -49,3 +49,4 @@ size = Vector2( 800, 800 )
 
 [node name="GUIPanel3D" parent="." instance=ExtResource( 5 )]
 transform = Transform( 1, 0, 0, 0, 0.0191276, 0.999817, 0, -0.999817, 0.0191276, -0.459996, 0.218944, -0.906535 )
+visible = false

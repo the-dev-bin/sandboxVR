@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Sting-Sword-lowpoly.obj-fcd8bc34ee77726a0196286764966ffd.mesh"
+
+[deps]
+
+files=[ "res://.import/Sting-Sword-lowpoly.obj-fcd8bc34ee77726a0196286764966ffd.mesh" ]
+
+source_file="res://assets/Sting-Sword-lowpoly.obj"
+dest_files=[ "res://.import/Sting-Sword-lowpoly.obj-fcd8bc34ee77726a0196286764966ffd.mesh", "res://.import/Sting-Sword-lowpoly.obj-fcd8bc34ee77726a0196286764966ffd.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true
