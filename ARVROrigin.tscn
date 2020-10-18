@@ -3,7 +3,6 @@
 [ext_resource path="res://ARVROrigin.gd" type="Script" id=1]
 [ext_resource path="res://scenes/right_controller.tscn" type="PackedScene" id=2]
 [ext_resource path="res://scenes/left_controller.tscn" type="PackedScene" id=3]
-[ext_resource path="res://scenes/GUIPanel3D.tscn" type="PackedScene" id=4]
 [ext_resource path="res://painting.tscn" type="PackedScene" id=4]
 
 [sub_resource type="PlaneMesh" id=1]
@@ -73,8 +72,6 @@ visible = false
 mesh = SubResource( 6 )
 material/0 = SubResource( 7 )
 
-[node name="GUIPanel3D" parent="." instance=ExtResource( 4 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.46591, 0 )
 [node name="painting" parent="." instance=ExtResource( 4 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.64518, 2.64724, 0 )
 mass = 0.14
