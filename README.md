@@ -1,4 +1,6 @@
-# sandboxVR
+# sandboxVR 
+## Update
+This project is currently no longer being maintained as of 10/19/2020. The use of Godot engine for VR prooved to be underwhelming and maybe revisited at a later date.
 
 This is a project for a hackathon, to build a sort of Gary's mod but for VR. The idea is this stands as a framework for building loadable mods. 
 The major goals of this project is to offer a engine of VR dev that skips the need to worry about movement, and interaction with objects. This project as mentioned in the section below takes advantage of the Godot OpenVR module as the primary engine to allow for cross platform capeabilities. 
